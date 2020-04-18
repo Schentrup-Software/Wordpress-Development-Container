@@ -1,6 +1,7 @@
 version: '3'
 services:
   wordpress:
+    image: andreccosta/wordpress-xdebug
     volumes:
       - .:/workspace
     environment:
@@ -9,4 +10,6 @@ services:
         define('DOMAIN_CURRENT_SITE', 'localhost');
         define('PATH_CURRENT_SITE', '/');
         define( 'WP_DEBUG_LOG', true );
- 
+      XDEBUG_CONFIG: remote_host=host.docker.internal
+    ports:
+      - 9000:9000

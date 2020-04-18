@@ -1,20 +1,21 @@
 {
-	"name": "Wordperss Plugin Development",
-	"dockerComposeFile": [
-		"..\\docker-compose.yaml",
-		"docker-compose.yml"
-	],
-	"service": "wordpress",
-	"workspaceFolder": "/workspace",
+    "name": "Wordperss Plugin Development",
+    "dockerComposeFile": [
+        "..\\docker-compose.yaml",
+        "docker-compose.yaml"
+    ],
+    "service": "wordpress",
+    "workspaceFolder": "/workspace",
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": { 
-		"terminal.integrated.shell.linux": null
-	},
+    // Set *default* container specific settings.json values on container create.
+    "settings": {
+        "terminal.integrated.shell.linux": null
+    },
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"jpagano.wordpress-vscode-extensionpack"
-	],
-	"postCreateCommand": "apt-get update && apt-get install -y git"
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        "jpagano.wordpress-vscode-extensionpack",
+        "editorconfig.editorconfig"
+    ],
+    "postCreateCommand": "apt-get update && apt-get install -y git"
 }

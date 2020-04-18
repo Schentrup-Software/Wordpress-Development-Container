@@ -2,7 +2,7 @@
 
 This is a skelton of a project that allows you to easily set up VS Code to begin doing [Wordpress](https://wordpress.org/) plugin development immediately.
 
-## Prerequisites 
+## Prerequisites
 
 * You must have [Docker](https://www.docker.com/get-started) and [Docker compose](https://docs.docker.com/compose/install/) installed
 * You need [VS Code](https://code.visualstudio.com/download) installed and the [Remote Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in it
@@ -10,8 +10,6 @@ This is a skelton of a project that allows you to easily set up VS Code to begin
 ## Start
 
 1. Clone this repo into onto your computer
-
-1. Open this folder in a shell with access to Docker and run `docker-compose up`
 
 1. Open the folder in VS Code
 
@@ -36,4 +34,4 @@ This is a skelton of a project that allows you to easily set up VS Code to begin
 
 ## Known issues
 
-* There seems to be an issue loading up the dev container through vs code, which is why I suggest following the instructions above. 
+* Sometimes the compose gets in a bad state after making changes to the file. You may need to delete the containers manually and prune your volumes to get it to start correctly again.
