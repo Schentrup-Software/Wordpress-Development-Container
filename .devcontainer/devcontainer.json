@@ -6,16 +6,18 @@
     ],
     "service": "wordpress",
     "workspaceFolder": "/workspace",
-
     // Set *default* container specific settings.json values on container create.
-    "settings": {
-        "terminal.integrated.shell.linux": null
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": null
+            },
+            "extensions": [
+                "jpagano.wordpress-vscode-extensionpack",
+                "editorconfig.editorconfig"
+            ]
+        }
     },
-
     // Add the IDs of extensions you want installed when the container is created.
-    "extensions": [
-        "jpagano.wordpress-vscode-extensionpack",
-        "editorconfig.editorconfig"
-    ],
     "postCreateCommand": "apt-get update && apt-get install -y git"
 }
